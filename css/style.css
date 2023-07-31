@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    font-family: system-ui;
+}
+
+svg {
+    height: 35px;
+    width: 35px;
+}
+
+span {
+    color: #E63946;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 70px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    transition: 300ms ease;
+}
+
+nav a:hover {
+    color: #E63946;
+}
+
+
+nav div a {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+/************************************************* Projects.html *******/
+main section.intro-container {
+    padding: 3rem;
+    background-color: #45789D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 400px;
+}
+
+main section.intro-container h1 {
+    font-size: 2.7rem;
+    color: whitesmoke;
+}
+
+main section.intro-container h3 {
+    font-size: 1.7rem;
+    color: whitesmoke;
+}
+
+/*** Grid Project Styling ***/
+
+section.project-grid {
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #1D3557;
+    padding: 2rem;
+}
+
+section.project-grid article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.project-grid img {
+    float: left;
+    width: 680px
+}
+
+section.project-grid h3 {
+    float: right;
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+section.project-grid figcaption {
+    color: whitesmoke;
+}
+
+/***************** Slideshow container styling ***/
+div.slideshow-container {
+    padding: 3rem;
+    min-height: 700px;
+    justify-content: center;
+    background-color: #1D3557;
+    color: whitesmoke;
+}
+
+section.slideshow {
+    display: flex;
+}
+
+div.images {
+    position: relative;
+    height: 400px;
+    width: 50%;
+    overflow: hidden;
+}
+
+div.images img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transition: transform 500ms ease;
+    will-change: transform;
+}
+
+figure.image-carousel img:first-child {
+    z-index: 1;
+    opacity: 1;
+}
+
+/***** Slideshow content *****/
+section.slideshow div.slideshow-content {
+    max-width: 50%;
+    padding: 2rem;
+}
+
+div.slideshow-content h2 {
+    font-size: 2rem;
+}
+
+div.slideshow-content p {
+    font-size: 1.2rem;
+}
+
+div.slideshow-content a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Div Button Styling */
+div.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+div.button-container div {
+    border: 2px solid #1D3557;
+    color: #1D3557;
+    display: inline-block;
+    padding: 0.3rem 2rem 0.3rem 2rem;
+    margin-left: 2rem;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+}
+
+div.button-container div:hover {
+    cursor: pointer;
+}
+
+/* Footer Styling ***/
+footer {
+    background-color: whitesmoke;
+    min-height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer svg {
+    margin: 0.4rem;
+}
+
+
+/********************************************* Index.html **/
+header {
+    background-color: #1D3557;;
+    min-height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+header article p {
+    color: whitesmoke;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div img {
+    width: 360px;
+    height: 400px;
+    object-fit: cover;
+    border: 2px solid whitesmoke;
+}
+
+header article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header article p {
+    max-width: 80%;
+    font-size: 1.3rem;
+}
